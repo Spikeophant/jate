@@ -23,7 +23,10 @@ module.exports = () => {
         template: './index.html',
         title: 'JATE',
       }),
-      new GenerateSW(),
+      new GenerateSW({
+          swDest: 'src-sw.js',
+        }
+      ),
       new MiniCssExtractPlugin(),
       new WebpackPwaManifest({
         name: 'JATE',
