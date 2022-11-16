@@ -14,7 +14,7 @@ export default class {
     this.editor = CodeMirror(document.querySelector('#main'), {
       value: '',
       mode: 'javascript',
-      theme: 'monokai',
+      theme: 'dracula',
       lineNumbers: true,
       lineWrapping: true,
       autofocus: true,
